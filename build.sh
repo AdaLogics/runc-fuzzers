@@ -1,9 +1,9 @@
 #!/bin/bash -eu
 
-go clean --modcache
-go mod tidy
-go mod vendor
-rm -r $SRC/runc/vendor
+#go clean --modcache
+#go mod tidy
+#go mod vendor
+#rm -r $SRC/runc/vendor
 go get github.com/AdaLogics/go-fuzz-headers
 
 export RUNC_PATH=github.com/opencontainers/runc
