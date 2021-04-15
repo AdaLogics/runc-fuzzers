@@ -5,7 +5,6 @@ This repository contains fuzzers written for the runc project during march and a
 Besides the fuzzers itself is a build script that can be called from runc's own OSS-fuzz build script. Just add the following:
 
 ```bash
-cd $SRC
-git clone --depth 1 https://github.com/AdaLogics/runc-fuzzers
+git clone --depth 1 https://github.com/AdaLogics/runc-fuzzers $SRC/runc-fuzzers
 ./runc-fuzzers/build.sh
 ```
