@@ -4,15 +4,10 @@ package libcontainer
 
 import (
 	"os"
-	"golang.org/x/sys/unix"
-	"encoding/json"
-	"errors"
 
 	gofuzzheaders "github.com/AdaLogics/go-fuzz-headers"
 	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/sirupsen/logrus"
-	securejoin "github.com/cyphar/filepath-securejoin"
-	"github.com/opencontainers/runc/libcontainer/configs/validate"
 )
 
 func FuzzStateApi(data []byte) int {
